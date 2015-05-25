@@ -13,6 +13,9 @@
 		7E610FA61B13D841008E2E57 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E610FA51B13D841008E2E57 /* Images.xcassets */; };
 		7E610FA91B13D841008E2E57 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E610FA71B13D841008E2E57 /* LaunchScreen.xib */; };
 		7E610FB51B13D841008E2E57 /* UsingBraintreeCarthageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E610FB41B13D841008E2E57 /* UsingBraintreeCarthageTests.swift */; };
+		7E610FBF1B13D9AC008E2E57 /* Braintree.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E610FBE1B13D9AC008E2E57 /* Braintree.framework */; };
+		7E610FC01B13D9AC008E2E57 /* Braintree.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7E610FBE1B13D9AC008E2E57 /* Braintree.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7E610FC41B13D9C4008E2E57 /* Temp.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E610FC31B13D9C4008E2E57 /* Temp.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +28,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		7E610FC11B13D9AD008E2E57 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7E610FC01B13D9AC008E2E57 /* Braintree.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		7E610F991B13D841008E2E57 /* UsingBraintreeCarthage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UsingBraintreeCarthage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E610F9D1B13D841008E2E57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -36,6 +53,9 @@
 		7E610FAE1B13D841008E2E57 /* UsingBraintreeCarthageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UsingBraintreeCarthageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E610FB31B13D841008E2E57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E610FB41B13D841008E2E57 /* UsingBraintreeCarthageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingBraintreeCarthageTests.swift; sourceTree = "<group>"; };
+		7E610FBE1B13D9AC008E2E57 /* Braintree.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Braintree.framework; path = Carthage/Build/iOS/Braintree.framework; sourceTree = "<group>"; };
+		7E610FC21B13D9C4008E2E57 /* UsingBraintreeCarthage-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UsingBraintreeCarthage-Bridging-Header.h"; sourceTree = "<group>"; };
+		7E610FC31B13D9C4008E2E57 /* Temp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Temp.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E610FBF1B13D9AC008E2E57 /* Braintree.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +80,7 @@
 		7E610F901B13D841008E2E57 = {
 			isa = PBXGroup;
 			children = (
+				7E610FBE1B13D9AC008E2E57 /* Braintree.framework */,
 				7E610F9B1B13D841008E2E57 /* UsingBraintreeCarthage */,
 				7E610FB11B13D841008E2E57 /* UsingBraintreeCarthageTests */,
 				7E610F9A1B13D841008E2E57 /* Products */,
@@ -83,6 +105,8 @@
 				7E610FA51B13D841008E2E57 /* Images.xcassets */,
 				7E610FA71B13D841008E2E57 /* LaunchScreen.xib */,
 				7E610F9C1B13D841008E2E57 /* Supporting Files */,
+				7E610FC31B13D9C4008E2E57 /* Temp.m */,
+				7E610FC21B13D9C4008E2E57 /* UsingBraintreeCarthage-Bridging-Header.h */,
 			);
 			path = UsingBraintreeCarthage;
 			sourceTree = "<group>";
@@ -122,6 +146,7 @@
 				7E610F951B13D841008E2E57 /* Sources */,
 				7E610F961B13D841008E2E57 /* Frameworks */,
 				7E610F971B13D841008E2E57 /* Resources */,
+				7E610FC11B13D9AD008E2E57 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -213,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E610FA11B13D841008E2E57 /* ViewController.swift in Sources */,
+				7E610FC41B13D9C4008E2E57 /* Temp.m in Sources */,
 				7E610F9F1B13D841008E2E57 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,9 +368,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = UsingBraintreeCarthage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UsingBraintreeCarthage/UsingBraintreeCarthage-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -352,9 +385,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = UsingBraintreeCarthage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UsingBraintreeCarthage/UsingBraintreeCarthage-Bridging-Header.h";
 			};
 			name = Release;
 		};
