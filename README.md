@@ -1,4 +1,4 @@
-# Using Braintree framework with Carthage in Swift
+# Using Braintree drop-in UI in Swift on iOS
 
 This is a demo app that shows how to use Braintree drop-in UI in a Swift iOS app.
 
